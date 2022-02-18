@@ -1,12 +1,12 @@
 function num(num) {
-    const seive = [];
+    const sieve = [];
     const primes = [];
 
     for (let i = 2; i <= num; i++) {
-        if (!seive[i]) {
+        if (!sieve[i]) {
             primes.push(i);
             for (let j = i * i; j <= num; j += i) {
-                seive[j] = true;
+                sieve[j] = true;
             }
         }
     }
